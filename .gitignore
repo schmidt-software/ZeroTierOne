@@ -139,3 +139,4 @@ __pycache__
 snap/.snapcraft
 tcp-proxy/tcp-proxy
 rustybits/target
+/build
