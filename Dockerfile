@@ -13,16 +13,18 @@ RUN rm -rf /var/lib/zerotier-one
 
 RUN apt-get update \
     && apt-get install -y \
-        curl \
-        iproute2 \
-        net-tools \
-        fping \
         2ping \
-        iputils-ping \
-        iputils-arping \
-        openssl \
+        curl \
+        ethtool \
+        fping \
         iftop \
-        ethtool
+        iproute2 \
+        iputils-arping \
+        iputils-ping \
+        mc \
+        nano \
+        net-tools \
+        openssl
 
 COPY entrypoint.sh.release /entrypoint.sh
 RUN chmod 755 /entrypoint.sh
